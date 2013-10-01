@@ -29,9 +29,9 @@ public class GuessANumberLab06 {
 				else {
 					if (x > y)
 					{System.out.println("Too low guess a higher number");}
-//test
-		}
-	}
+
+}
+}
 }
 }
 }
