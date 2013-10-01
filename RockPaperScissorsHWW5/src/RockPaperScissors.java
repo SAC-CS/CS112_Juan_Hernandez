@@ -54,4 +54,4 @@ public class RockPaperScissors {
 	
 
 
-
+//Good but is this all the combination?
