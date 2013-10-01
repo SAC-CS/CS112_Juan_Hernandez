@@ -8,48 +8,45 @@ public class RockPaperScissors {
 
 	public static void main (String[]args)
 	{
+		int round = 0;
+		while (round < 15){
+		round ++;
 		
 		// Get input from players
+		int playerComputer = 1 + (int) ( Math.random() * 3 );
 		Scanner input = new Scanner( System.in );
 		
-		System.out.println("Player A, enter R for Rock, P for Paper, or S for Scissors: ");
-		String playerA = input.next();
-		playerA = playerA.toUpperCase();
-		System.out.println("Player B, enter R for Rock, P for Paper, or S for Scissors: ");
-		String playerB = input.next();
-		playerB = playerB.toUpperCase();
-	
+		System.out.println("Player A, enter 1 for Rock, 2 for Paper, or 3 for Scissors: ");
+		int playerA = input.nextInt();
+		
+		
 		// Process
 		
-		if (playerA.equals(playerB))
+		if (playerA == playerComputer)
 			{System.out.println("It's a tie!!");}
 		else 
-			if (playerA.equals("R")){
-				if(playerB.equals("P"))
-				{System.out.println("Paper beats Rock, Player B Wins!!");}
+			if (playerA == 1 && playerComputer == 2)
+				{System.out.println("Paper beats Rock, Computer Wins!!");}
 				else 
-					if (playerB.equals("S")){
-						{System.out.println("Rock beats Scissors, Player A Wins!!");}}
-				}
-			if (playerA.equals("P")){
-				if(playerB.equals("R"))
-				{System.out.println("Paper beats Rock, Player A Wins!!");}
-				else 
-					if (playerB.equals("S")){
-						{System.out.println("Scissors beats Paper, Player B Wins!!");}}
-				}
-			if (playerA.equals("S")){
-				if(playerB.equals("P"))
-				{System.out.println("Scissors beats Paper, Player A Wins!!");}
-				else 
-					if (playerB.equals("R")){
-						{System.out.println("Rock beats Scissors, Player B Wins!!");}}
-									
-					
-		}
+					if (playerA == 1 && playerComputer == 3)
+						{System.out.println("Rock beats Scissors, You Win!!");}
+						
+						else 
+							if (playerA == 2 && playerComputer == 1)
+								{System.out.println("Paper beats Rock, You Win!!");}
+							else 
+								if (playerA == 2 && playerComputer == 3)
+									{System.out.println("Scissors beat Paper, Computer Wins!!");}
+								else 
+									if (playerA == 3 && playerComputer == 1)
+										{System.out.println("Rock beats Scissors, Computer Wins!!");}
+									else 
+										if (playerA == 3 && playerComputer == 2)
+											{System.out.println("Scissors beat Paper, You Win!!");}
+		
 	}
 }
-
+}
 					
 			
 	
