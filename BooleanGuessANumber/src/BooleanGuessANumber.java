@@ -43,10 +43,9 @@ public class BooleanGuessANumber {
 					
 					System.out.println("Do you want to keep playing? yes = 1, no = 2");
 					int no = input.nextInt();
-					
 					if (no == 2 )
 					{proceed = false;}
-					else {proceed = playCount < 9999;}
+					else {proceed = true;}
 					
 					
 					
