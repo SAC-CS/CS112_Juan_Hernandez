@@ -1,6 +1,6 @@
 // Juan P Hernandez
 // 09/24/2013
-// Boolean Guess A Number Game
+// Guess A Number Game
 
 import java.util.Scanner;
 
@@ -11,19 +11,26 @@ public class BooleanGuessANumber {
 		{
 		
 		int playCount = 0;
-		while (playCount < 3){
+		boolean proceed = true;
+		while (proceed){
 		playCount ++;
-		
+		proceed = playCount < 999;
 		
 		int x = 0 + (int) ( Math.random() * 10 );
 		Scanner input = new Scanner( System.in );
 
 		System.out.println("Guess a number from 0-9: ");
+		
+		
+		
 
 		int y = input.nextInt();
 		
+		
 		boolean win = x == y;
 		boolean lower = x < y;
+		
+		
 		
 
 		if (win)
@@ -31,9 +38,19 @@ public class BooleanGuessANumber {
 			else {
 				if (lower )
 				{System.out.println("Too high guess a lower number");}
-				else {
+					else {
 					{System.out.println("Too low guess a higher number");}
-
+					
+					System.out.println("Do you want to keep playing? yes = 1, no = 2");
+					int no = input.nextInt();
+					
+					if (no == 2 )
+					{proceed = playCount < 0;}
+					else {proceed = playCount < 9999;}
+					
+					
+					
+				
 }
 }
 }
