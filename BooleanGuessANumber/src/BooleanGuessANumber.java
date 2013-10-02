@@ -45,7 +45,7 @@ public class BooleanGuessANumber {
 					int no = input.nextInt();
 					
 					if (no == 2 )
-					{proceed = playCount < 0;}
+					{proceed = false;}
 					else {proceed = playCount < 9999;}
 					
 					
