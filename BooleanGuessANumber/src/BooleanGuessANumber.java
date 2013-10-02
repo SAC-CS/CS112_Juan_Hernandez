@@ -1,6 +1,6 @@
 // Juan P Hernandez
 // 09/24/2013
-// Guess A Number Game
+// Boolean Guess A Number Game
 
 import java.util.Scanner;
 
