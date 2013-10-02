@@ -1,0 +1,42 @@
+// Juan P Hernandez
+// 09/24/2013
+// Guess A Number Game
+
+import java.util.Scanner;
+
+
+public class BooleanGuessANumber {
+
+	public static void main(String[] args)
+		{
+		
+		int round = 0;
+		while (round < 3){
+		round ++;
+		
+		
+		int x = 0 + (int) ( Math.random() * 10 );
+		Scanner input = new Scanner( System.in );
+
+		System.out.println("Guess a number from 0-9: ");
+
+		int y = input.nextInt();
+		
+		boolean win = x == y;
+		boolean lower = x < y;
+		boolean higher = x > y;
+
+		if (win)
+		{System.out.println("You are right!");}
+			else {
+				if (lower )
+				{System.out.println("Too high guess a lower number");}
+				else {
+					if ( higher )
+					{System.out.println("Too low guess a higher number");}
+
+}
+}
+}
+}
+}
