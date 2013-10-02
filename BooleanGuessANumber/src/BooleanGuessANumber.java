@@ -43,9 +43,17 @@ public class BooleanGuessANumber {
 					
 					System.out.println("Do you want to keep playing? yes = 1, no = 2");
 					int no = input.nextInt();
-					if (no == 2 )
-					{proceed = false;}
-					else {proceed = true;}
+					if (no == 2 );
+					
+					switch (no){
+					case 1: no = 1;
+					proceed = true;
+					break;
+					case 2: no = 2;
+					proceed = false;
+					break;
+					}
+					
 					
 					
 					
