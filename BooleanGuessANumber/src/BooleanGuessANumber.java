@@ -10,9 +10,9 @@ public class BooleanGuessANumber {
 	public static void main(String[] args)
 		{
 		
-		int round = 0;
-		while (round < 3){
-		round ++;
+		int playCount = 0;
+		while (playCount < 3){
+		playCount ++;
 		
 		
 		int x = 0 + (int) ( Math.random() * 10 );
@@ -24,6 +24,7 @@ public class BooleanGuessANumber {
 		
 		boolean win = x == y;
 		boolean lower = x < y;
+		
 
 		if (win)
 		{System.out.println("You are right!");}
