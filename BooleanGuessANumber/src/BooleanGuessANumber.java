@@ -24,7 +24,6 @@ public class BooleanGuessANumber {
 		
 		boolean win = x == y;
 		boolean lower = x < y;
-		boolean higher = x > y;
 
 		if (win)
 		{System.out.println("You are right!");}
@@ -32,7 +31,6 @@ public class BooleanGuessANumber {
 				if (lower )
 				{System.out.println("Too high guess a lower number");}
 				else {
-					if ( higher )
 					{System.out.println("Too low guess a higher number");}
 
 }
