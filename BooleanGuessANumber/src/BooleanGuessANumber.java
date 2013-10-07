@@ -10,11 +10,11 @@ public class BooleanGuessANumber {
 	public static void main(String[] args)
 		{
 		
-		int playCount = 0;
+		int playCount = 3;
 		boolean proceed = true;
 		while (proceed){
 		playCount ++;
-		proceed = playCount < 999;
+		proceed = playCount < 3;
 		
 		int x = 0 + (int) ( Math.random() * 10 );
 		Scanner input = new Scanner( System.in );
