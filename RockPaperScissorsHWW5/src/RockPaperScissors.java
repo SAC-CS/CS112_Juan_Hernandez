@@ -88,6 +88,6 @@ public class RockPaperScissors {
 }
 	
 	
-
+//while (round <= games) :  Please end the game as soon as a winner is reached.   If users wants 3 games, and machine wins first 2, there is no reason to continue
 
 
