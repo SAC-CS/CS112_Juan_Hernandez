@@ -68,10 +68,6 @@ public class RockPaperScissors {
 		} // end while
 		
 		
-		String totalWins = String.format("\nPlayer wins: %d\nComputer wins: %d\nTies: %d\n", 
-				playerWinsCounter, computerWinsCounter, playerComputerTies);
-		JOptionPane.showMessageDialog(null, totalWins);
-		
 		
 		if (playerWinsCounter > computerWinsCounter)
 		{String playerWinsMessage = String.format("\nPlayer wins this match");
@@ -84,6 +80,10 @@ public class RockPaperScissors {
 		if (computerWinsCounter == playerWinsCounter)
 		{String tieMessage = String.format("\nNo one wins, it was a tie");
 			JOptionPane.showMessageDialog(null, tieMessage);}
+		
+		String totalWins = String.format("\nPlayer wins: %d\nComputer wins: %d\nTies: %d\n", 
+				playerWinsCounter, computerWinsCounter, playerComputerTies);
+		JOptionPane.showMessageDialog(null, totalWins);
 }
 }
 	
