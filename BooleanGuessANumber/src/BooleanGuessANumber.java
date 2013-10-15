@@ -72,3 +72,4 @@ public class BooleanGuessANumber {
 		
 }
 }
+//Good
